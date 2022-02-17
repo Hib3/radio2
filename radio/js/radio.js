@@ -1,7 +1,5 @@
-スクリプト
-これから変更させる
 
-let ch_list=[
+var ch_list=[
     "<source src='http://37.220.36.53:7904/;?type=http&amp;nocache=18236' type='audio/mpeg'>"
     ,"<source src='http://ststmks.s3.amazonaws.com/izakayasound/media/kitanohomare.mp3'>"
     ,"<source src='http://uk2.internet-radio.com:8024//stream?type=http&nocache=541'>"
@@ -54,32 +52,8 @@ let ch_list=[
     ,"<source src='https://vapor.fm:8000/stream' type='audio/mpeg'>"
     ]
 
-/*
-機能
-ボタンを押されたらインナーHTMLを変更する
-必要なもの
-・URL
-・変更ができる関数 = a1など
-*/
-
 function a(value){
-  ch.innerHTML = "<audio id='music' preload='none' autoplay='true'>"
-    +
-    ch[value]
-    +
-    "</audio>"
+  var ch = document.getElementById('music');
+  //console.log(value);
+  ch.innerHTML = `<audio id='music' preload='none' autoplay='true'>${ch_list[value]}</audio>`
 }
-
-/*
-var a1 = function ()
-{
-var ch1 = document.getElementById('music');
-
-    ch1.innerHTML = "<audio id='music' preload='none' autoplay='true'>"
-              +
-               ch[0]
-              +
-              "</audio>"
-//複数行で書く場合は各行を""で囲んで+で結合する
-}
-*/
