@@ -62,7 +62,7 @@ let ch_list=[
 ・変更ができる関数 = a1など
 */
 
-function button(value){
+function a(value){
   ch.innerHTML = "<audio id='music' preload='none' autoplay='true'>"
     +
     ch[value]
