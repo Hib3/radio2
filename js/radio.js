@@ -48,7 +48,7 @@ var ch_list=[
     ,"<source src='https://cdn-beta.tunein.com/assets/media/blank.mp3' type='audio/mpeg'>"
     ,"<source src='http://85.10.198.55:8000/;?type=http&amp;nocache=18276' type='audio/mpeg'>"
     ,"<source src='http://stream.antenne.de:80/antenne' type='audio/mpeg'>"
-    ,"<source src='http://51.15.76.3:80/;?type=http&amp;nocache=18278' type='audio/mpeg'>"
+    ,"<source src='https://s6-webradio.antenne.de/rockantenne?icy=https' type='audio/mpeg'>"
     ,"<source src='https://vapor.fm:8000/stream' type='audio/mpeg'>"
     ]
 
