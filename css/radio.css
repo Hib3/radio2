@@ -1,0 +1,42 @@
+*, *:after, *:before {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+* {margin:0;padding:0;border: 0 none;position: relative;}
+ 
+html {
+  background: url(../image/bg.jpeg) 0 0 no-repeat ;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+body {
+  width: 100%;
+  min-height: 100%;
+  background: inherit;
+  overflow: hidden;
+}
+
+body::before{
+  content: '';
+  display:block;
+  padding-top:10%;
+}
+
+input[type=radio]:focus {
+  box-shadow: 0 0 30px royalblue;
+  border-radius:20px;
+}
+input[type=radio]:focus:checked{
+  box-shadow:none;
+}
+
+input[type="radio"]{
+  margin-right:3px;
+  margin-left: 0px;
+  position: relative;
+}
+
+.container {text-align: center;}
