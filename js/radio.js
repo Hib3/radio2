@@ -71,7 +71,7 @@ let playMusic = (event)=>{
     //再読み込み
     audioElement.load();
     audioElement.play();  // 明示的に再生を開始
-
+    audioElement.volume = 0.05;
 }
 
 function createContent(){
@@ -96,6 +96,3 @@ function createContent(){
 window.onload = (event) => {
     createContent();
 };
-
-
-
