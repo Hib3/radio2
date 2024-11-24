@@ -19,7 +19,7 @@ Radio Player Website へようこそ！このシンプルでユーザーフレ�
 git clone https://github.com/your-username/radio-player-website.git
 
 2. アプリを開く
-ブラウザで http://localhost:3000 にアクセスして、ライブラジオを聴き始めましょう！
+ブラウザでアクセスして、ライブラジオを聴き始めましょう！
 
 🛠️ 仕組み
 このラジオプレイヤーアプリは、HTML5、CSS、JavaScript などの最新のウェブ技術を使って構築されています。主な機能は以下の通りです：
