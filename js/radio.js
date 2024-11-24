@@ -68,6 +68,9 @@ let playMusic = (event)=>{
     }
     ////選択したSourceのエレメントを追加
     audioElement.appendChild(sourceElement);
+    //再読み込み
+    audioElement.load();
+    audioElement.play();  // 明示的に再生を開始
 
 }
 
@@ -81,6 +84,7 @@ function createContent(){
         let liElement = document.createElement("li");
         ulElement.appendChild(liElement)
         let inputElement = document.createElement("input");
+        inputElement.name = "radio-name";
         inputElement.type = "radio";
         inputElement.classList.add("radiobox-tremolo");
         inputElement.value = i;
