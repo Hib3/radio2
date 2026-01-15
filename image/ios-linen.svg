@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="240" viewBox="0 0 240 240">
+  <defs>
+    <linearGradient id="steel" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f5f7fb"/>
+      <stop offset="0.5" stop-color="#d8dde5"/>
+      <stop offset="1" stop-color="#b8c0cc"/>
+    </linearGradient>
+    <pattern id="linen" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect width="20" height="20" fill="url(#steel)"/>
+      <path d="M0 0h20v1H0zM0 10h20v1H0z" fill="#c3c9d3" opacity="0.6"/>
+      <path d="M0 0v20h1V0zM10 0v20h1V0z" fill="#aeb6c2" opacity="0.45"/>
+      <path d="M0 19h20v1H0z" fill="#f7f9fc" opacity="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="240" height="240" fill="url(#linen)"/>
+</svg>
