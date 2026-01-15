@@ -16,13 +16,17 @@
   --ios-blue-light: #6fa5ff;
   --ios-surface: rgba(255, 255, 255, 0.88);
   --ios-text: #1b1f28;
-  --ios-border: rgba(0, 0, 0, 0.15);
+  --ios-border: rgba(0, 0, 0, 0.2);
   --ios-shadow: rgba(0, 0, 0, 0.25);
 }
 
 html {
-  background: url(../image/bg.jpeg) center center / cover no-repeat fixed;
-  background-color: #464646;
+  background-color: #3b3b3b;
+  background-image: url(../image/bg.jpeg), url(../image/ios-linen.svg);
+  background-position: center center, center center;
+  background-size: cover, 240px 240px;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed, fixed;
 }
 
 body {
@@ -30,7 +34,7 @@ body {
   min-height: 100vh;
   font-family: "Helvetica Neue", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", sans-serif;
   color: var(--ios-text);
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0.65));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.62));
 }
 
 .container {
@@ -49,7 +53,6 @@ body {
   letter-spacing: 0.04em;
   text-shadow: 0 1px 2px rgba(255, 255, 255, 0.7);
 }
-
 
 .controls {
   display: grid;
@@ -102,25 +105,44 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  gap: 8px;
   width: 100%;
-  min-height: 44px;
+  min-height: 46px;
   padding: 8px 12px;
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 600;
   border-radius: 14px;
   border: 1px solid var(--ios-border);
   color: #0f1d33;
-  background: linear-gradient(180deg, #fefefe, #dfe6f3);
-  box-shadow: inset 0 1px 0 #ffffff, 0 4px 10px rgba(0, 0, 0, 0.15);
+  background-image: url(../image/ios-button.svg), linear-gradient(180deg, #fefefe, #d0d8e6);
+  background-size: 200px 200px, cover;
+  background-repeat: repeat, no-repeat;
+  box-shadow: inset 0 1px 0 #ffffff, inset 0 -1px 0 rgba(0, 0, 0, 0.12), 0 4px 10px rgba(0, 0, 0, 0.25);
   transition: transform 0.1s ease, box-shadow 0.2s ease;
   cursor: pointer;
+}
+
+.channel span::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #e3e6ef 45%, #b9c2d4 100%);
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.9), inset 0 -1px 1px rgba(0, 0, 0, 0.15);
 }
 
 .channel input:checked + span {
   color: #ffffff;
   border-color: #1b468f;
-  background: linear-gradient(180deg, var(--ios-blue-light), var(--ios-blue-dark));
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 6px 14px rgba(0, 0, 0, 0.25);
+  background-image: url(../image/ios-button.svg), linear-gradient(180deg, var(--ios-blue-light), var(--ios-blue-dark));
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.25), 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+.channel input:checked + span::before {
+  background: radial-gradient(circle at 30% 30%, #ffffff 0%, #9cc2ff 35%, #2f6edb 100%);
+  border-color: rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 1px 1px rgba(255, 255, 255, 0.8), inset 0 -1px 2px rgba(0, 0, 0, 0.3);
 }
 
 .channel input:focus + span {
@@ -149,8 +171,10 @@ body {
   font-weight: 600;
   border-radius: 12px;
   border: 1px solid var(--ios-border);
-  background: linear-gradient(180deg, #ffffff, #dbe2ef);
-  box-shadow: inset 0 1px 0 #fff, 0 4px 10px rgba(0, 0, 0, 0.2);
+  background-image: url(../image/ios-button.svg), linear-gradient(180deg, #ffffff, #d0d8e6);
+  background-size: 200px 200px, cover;
+  background-repeat: repeat, no-repeat;
+  box-shadow: inset 0 1px 0 #fff, inset 0 -1px 0 rgba(0, 0, 0, 0.12), 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
